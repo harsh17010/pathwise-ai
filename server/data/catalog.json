@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "course-001",
+    "title": "Advanced Java and Spring Boot",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building microservices with Spring Cloud, handling transactions, and securing APIs with Spring Security were highlights",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Advanced Java and Spring Boot through the technical topic: Building microservices with Spring Cloud, handling transactions, and securing APIs with Spring Security were highlights"
+  },
+  {
+    "id": "course-002",
+    "title": "Advanced Neural Networks",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Training very deep networks, handling vanishing gradients, and using learning rate schedulers were key topics",
+    "skills": [
+      "Deep Learning",
+      "Modeling"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [
+      "Probability and Statistics"
+    ],
+    "catalogFact": "The uploaded dataset describes Advanced Neural Networks through the technical topic: Training very deep networks, handling vanishing gradients, and using learning rate schedulers were key topics"
+  },
+  {
+    "id": "course-003",
+    "title": "Advanced Python Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Concurrency with asyncio, multiprocessing, and threading was covered at a production level",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "Python Programming Masterclass"
+    ],
+    "catalogFact": "The uploaded dataset describes Advanced Python Development through the technical topic: Concurrency with asyncio, multiprocessing, and threading was covered at a production level"
+  },
+  {
+    "id": "course-004",
+    "title": "Advanced SQL and Query Optimization",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Query execution plans, index design, and avoiding full table scans made the optimization sections very practical",
+    "skills": [
+      "SQL",
+      "Data Modeling"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [
+      "SQL for Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Advanced SQL and Query Optimization through the technical topic: Query execution plans, index design, and avoiding full table scans made the optimization sections very practical"
+  },
+  {
+    "id": "course-005",
+    "title": "Android App Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Activities, fragments, intents, RecyclerView, and the Android lifecycle were the foundational Android concepts",
+    "skills": [
+      "Mobile Development",
+      "App Development"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Android App Development through the technical topic: Activities, fragments, intents, RecyclerView, and the Android lifecycle were the foundational Android concepts"
+  },
+  {
+    "id": "course-006",
+    "title": "Angular Framework Essentials",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Two-way data binding with ngModel, routing with RouterModule, and reactive forms were key highlights",
+    "skills": [
+      "Frontend Development",
+      "JavaScript"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes Angular Framework Essentials through the technical topic: Two-way data binding with ngModel, routing with RouterModule, and reactive forms were key highlights"
+  },
+  {
+    "id": "course-007",
+    "title": "Apache Kafka for Real-time Data",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Setting up Kafka Connect for ingestion, Kafka Streams for processing, and Schema Registry for schema management were highlights",
+    "skills": [
+      "Data Engineering",
+      "Distributed Systems"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Apache Kafka for Real-time Data through the technical topic: Setting up Kafka Connect for ingestion, Kafka Streams for processing, and Schema Registry for schema management were highlights"
+  },
+  {
+    "id": "course-008",
+    "title": "AWS Cloud Practitioner",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Understanding the shared responsibility model, pricing models, and support plans was exam-focused and thorough",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes AWS Cloud Practitioner through the technical topic: Understanding the shared responsibility model, pricing models, and support plans was exam-focused and thorough"
+  },
+  {
+    "id": "course-009",
+    "title": "AWS Solutions Architect",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "VPC design, security groups, route tables, and NAT gateways were covered in strong architectural detail",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes AWS Solutions Architect through the technical topic: VPC design, security groups, route tables, and NAT gateways were covered in strong architectural detail"
+  },
+  {
+    "id": "course-010",
+    "title": "Azure Fundamentals",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Azure Kubernetes Service, Azure DevOps integration, and monitoring with Azure Monitor were useful additions",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Azure Fundamentals through the technical topic: Azure Kubernetes Service, Azure DevOps integration, and monitoring with Azure Monitor were useful additions"
+  },
+  {
+    "id": "course-011",
+    "title": "Bayesian Statistics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Prior distributions, likelihood functions, posterior updates, and conjugate priors were explained with clear examples",
+    "skills": [
+      "Mathematics",
+      "Statistics"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Bayesian Statistics through the technical topic: Prior distributions, likelihood functions, posterior updates, and conjugate priors were explained with clear examples"
+  },
+  {
+    "id": "course-012",
+    "title": "Blockchain Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Distributed ledger concepts, consensus mechanisms like Proof of Work and Proof of Stake, and cryptographic hashing were introduced",
+    "skills": [
+      "Blockchain",
+      "Smart Contracts"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Blockchain Development through the technical topic: Distributed ledger concepts, consensus mechanisms like Proof of Work and Proof of Stake, and cryptographic hashing were introduced"
+  },
+  {
+    "id": "course-013",
+    "title": "C Plus Plus Programming Essentials",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Understanding the compilation process, header files, and linking made systems programming concepts concrete",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes C Plus Plus Programming Essentials through the technical topic: Understanding the compilation process, header files, and linking made systems programming concepts concrete"
+  },
+  {
+    "id": "course-014",
+    "title": "Calculus for Data Science",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Understanding the learning rate, saddle points, and convexity helped demystify deep learning optimization",
+    "skills": [
+      "Python",
+      "Programming",
+      "Mathematics",
+      "Statistics"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Calculus for Data Science through the technical topic: Understanding the learning rate, saddle points, and convexity helped demystify deep learning optimization"
+  },
+  {
+    "id": "course-015",
+    "title": "CI CD Pipeline Setup",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Environment-specific deployments, secret management, and rollback strategies completed the CI/CD picture",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes CI CD Pipeline Setup through the technical topic: Environment-specific deployments, secret management, and rollback strategies completed the CI/CD picture"
+  },
+  {
+    "id": "course-016",
+    "title": "Computer Vision with OpenCV",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Object detection with Haar cascades and integrating OpenCV with deep learning models were excellent highlights",
+    "skills": [
+      "Deep Learning",
+      "Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Computer Vision with OpenCV through the technical topic: Object detection with Haar cascades and integrating OpenCV with deep learning models were excellent highlights"
+  },
+  {
+    "id": "course-017",
+    "title": "Cybersecurity Fundamentals",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The CIA triad, threat modeling, common attack vectors, and defense-in-depth principles were carefully introduced",
+    "skills": [
+      "Cybersecurity",
+      "Security"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Cybersecurity Fundamentals through the technical topic: The CIA triad, threat modeling, common attack vectors, and defense-in-depth principles were carefully introduced"
+  },
+  {
+    "id": "course-018",
+    "title": "Data Analysis with Pandas",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "DataFrame manipulation, groupby operations, merging, and reshaping data with Pandas was covered thoroughly",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Data Analysis with Pandas through the technical topic: DataFrame manipulation, groupby operations, merging, and reshaping data with Pandas was covered thoroughly"
+  },
+  {
+    "id": "course-019",
+    "title": "Data Engineering with Apache Spark",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Optimizing Spark jobs with partitioning, caching, broadcast joins, and monitoring with Spark UI were key topics",
+    "skills": [
+      "Data Engineering",
+      "Distributed Systems"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Data Engineering with Apache Spark through the technical topic: Optimizing Spark jobs with partitioning, caching, broadcast joins, and monitoring with Spark UI were key topics"
+  },
+  {
+    "id": "course-020",
+    "title": "Data Visualization with Matplotlib",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Customizing axes, labels, titles, legends, and color palettes gave my visualizations a professional look",
+    "skills": [
+      "Data Analysis",
+      "Visualization"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Data Visualization with Matplotlib through the technical topic: Customizing axes, labels, titles, legends, and color palettes gave my visualizations a professional look"
+  },
+  {
+    "id": "course-021",
+    "title": "Data Warehouse Design",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Star schema, snowflake schema, fact tables, dimension tables, and slowly changing dimensions were core concepts",
+    "skills": [
+      "SQL",
+      "Data Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "SQL for Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Data Warehouse Design through the technical topic: Star schema, snowflake schema, fact tables, dimension tables, and slowly changing dimensions were core concepts"
+  },
+  {
+    "id": "course-022",
+    "title": "Database Performance Tuning",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Connection pooling, vacuuming in PostgreSQL, and buffer pool tuning in MySQL were database-specific optimizations",
+    "skills": [
+      "SQL",
+      "Data Modeling"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [
+      "SQL for Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Database Performance Tuning through the technical topic: Connection pooling, vacuuming in PostgreSQL, and buffer pool tuning in MySQL were database-specific optimizations"
+  },
+  {
+    "id": "course-023",
+    "title": "Deep Learning with PyTorch",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Transfer learning with pretrained models and fine-tuning strategies were the most impactful sections",
+    "skills": [
+      "Deep Learning",
+      "Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners",
+      "Probability and Statistics"
+    ],
+    "catalogFact": "The uploaded dataset describes Deep Learning with PyTorch through the technical topic: Transfer learning with pretrained models and fine-tuning strategies were the most impactful sections"
+  },
+  {
+    "id": "course-024",
+    "title": "Deep Learning with TensorFlow",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building neural networks with Keras layers, activation functions, and loss functions was very structured",
+    "skills": [
+      "Deep Learning",
+      "Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners",
+      "Probability and Statistics"
+    ],
+    "catalogFact": "The uploaded dataset describes Deep Learning with TensorFlow through the technical topic: Building neural networks with Keras layers, activation functions, and loss functions was very structured"
+  },
+  {
+    "id": "course-025",
+    "title": "DevOps Practices and Tools",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Site reliability engineering principles, SLOs, error budgets, and blameless postmortems were introduced",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes DevOps Practices and Tools through the technical topic: Site reliability engineering principles, SLOs, error budgets, and blameless postmortems were introduced"
+  },
+  {
+    "id": "course-026",
+    "title": "Django Web Framework",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "URL routing, views, templates, and form handling made building web applications very structured",
+    "skills": [
+      "Python",
+      "Programming",
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Django Web Framework through the technical topic: URL routing, views, templates, and form handling made building web applications very structured"
+  },
+  {
+    "id": "course-027",
+    "title": "Docker and Containerization",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Docker Compose for multi-container applications and tagging and pushing images to Docker Hub were practical",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Docker and Containerization through the technical topic: Docker Compose for multi-container applications and tagging and pushing images to Docker Hub were practical"
+  },
+  {
+    "id": "course-028",
+    "title": "Embedded Systems Programming",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Power management, debugging with JTAG, and writing bootloaders demystified the lowest layers of computing",
+    "skills": [
+      "Embedded Systems",
+      "Hardware"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Embedded Systems Programming through the technical topic: Power management, debugging with JTAG, and writing bootloaders demystified the lowest layers of computing"
+  },
+  {
+    "id": "course-029",
+    "title": "Ethical Hacking Basics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Exploitation with Metasploit, password cracking, and privilege escalation were demonstrated in a lab environment",
+    "skills": [
+      "Cybersecurity",
+      "Security"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Ethical Hacking Basics through the technical topic: Exploitation with Metasploit, password cracking, and privilege escalation were demonstrated in a lab environment"
+  },
+  {
+    "id": "course-030",
+    "title": "ETL Pipeline Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Handling schema changes, deduplication, incremental loads, and error recovery were practical engineering concerns",
+    "skills": [
+      "SQL",
+      "Data Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "SQL for Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes ETL Pipeline Development through the technical topic: Handling schema changes, deduplication, incremental loads, and error recovery were practical engineering concerns"
+  },
+  {
+    "id": "course-031",
+    "title": "Excel for Data Analysis",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Pivot tables, VLOOKUP, conditional formatting, and named ranges transformed how I use spreadsheets",
+    "skills": [
+      "Data Analysis",
+      "Visualization"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Excel for Data Analysis through the technical topic: Pivot tables, VLOOKUP, conditional formatting, and named ranges transformed how I use spreadsheets"
+  },
+  {
+    "id": "course-032",
+    "title": "Exploratory Data Analysis",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Using Seaborn for pairplots and heatmaps alongside Pandas profiling made exploration very efficient",
+    "skills": [
+      "Data Analysis",
+      "Visualization"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Exploratory Data Analysis through the technical topic: Using Seaborn for pairplots and heatmaps alongside Pandas profiling made exploration very efficient"
+  },
+  {
+    "id": "course-033",
+    "title": "Feature Engineering for ML",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Feature selection using importance scores, correlation filtering, and recursive elimination was very practical",
+    "skills": [
+      "Machine Learning",
+      "Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Feature Engineering for ML through the technical topic: Feature selection using importance scores, correlation filtering, and recursive elimination was very practical"
+  },
+  {
+    "id": "course-034",
+    "title": "Flask API Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Deploying a Flask API with Gunicorn and connecting to a PostgreSQL database completed the learning arc",
+    "skills": [
+      "Python",
+      "Programming",
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Flask API Development through the technical topic: Deploying a Flask API with Gunicorn and connecting to a PostgreSQL database completed the learning arc"
+  },
+  {
+    "id": "course-035",
+    "title": "Flutter Cross Platform Apps",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Widgets, stateful versus stateless components, and the widget tree were Flutter's core building blocks",
+    "skills": [
+      "Mobile Development",
+      "App Development"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Flutter Cross Platform Apps through the technical topic: Widgets, stateful versus stateless components, and the widget tree were Flutter's core building blocks"
+  },
+  {
+    "id": "course-036",
+    "title": "Generative AI and Prompt Engineering",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Understanding large language models, prompt design patterns, and chain-of-thought prompting were central topics",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Generative AI and Prompt Engineering through the technical topic: Understanding large language models, prompt design patterns, and chain-of-thought prompting were central topics"
+  },
+  {
+    "id": "course-037",
+    "title": "Git and GitHub Mastery",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Pull requests, code reviews, protected branches, and GitHub Actions for automation were very practical",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Git and GitHub Mastery through the technical topic: Pull requests, code reviews, protected branches, and GitHub Actions for automation were very practical"
+  },
+  {
+    "id": "course-038",
+    "title": "Go Language for Backend",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building a REST API with the standard net/http package and connecting to PostgreSQL was very practical",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Go Language for Backend through the technical topic: Building a REST API with the standard net/http package and connecting to PostgreSQL was very practical"
+  },
+  {
+    "id": "course-039",
+    "title": "Google Cloud Platform Basics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "IAM roles, service accounts, and the GCP billing model were explained with practical examples",
+    "skills": [
+      "Backend Development",
+      "APIs",
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Google Cloud Platform Basics through the technical topic: IAM roles, service accounts, and the GCP billing model were explained with practical examples"
+  },
+  {
+    "id": "course-040",
+    "title": "GraphQL API Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Subscriptions, batching with DataLoader, and authentication in GraphQL were advanced topics handled well",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes GraphQL API Development through the technical topic: Subscriptions, batching with DataLoader, and authentication in GraphQL were advanced topics handled well"
+  },
+  {
+    "id": "course-041",
+    "title": "HTML and CSS for Beginners",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The sections on typography, color schemes, and basic responsive design were very accessible",
+    "skills": [
+      "Frontend Development",
+      "JavaScript"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes HTML and CSS for Beginners through the technical topic: The sections on typography, color schemes, and basic responsive design were very accessible"
+  },
+  {
+    "id": "course-042",
+    "title": "Hypothesis Testing in Practice",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "t-tests, chi-square tests, Mann-Whitney U tests, and ANOVA were all implemented with real datasets",
+    "skills": [
+      "Mathematics",
+      "Statistics"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Probability and Statistics"
+    ],
+    "catalogFact": "The uploaded dataset describes Hypothesis Testing in Practice through the technical topic: t-tests, chi-square tests, Mann-Whitney U tests, and ANOVA were all implemented with real datasets"
+  },
+  {
+    "id": "course-043",
+    "title": "iOS App Development with Swift",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "UIKit components, Auto Layout constraints, and navigation controllers formed the UI development core",
+    "skills": [
+      "Mobile Development",
+      "App Development"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes iOS App Development with Swift through the technical topic: UIKit components, Auto Layout constraints, and navigation controllers formed the UI development core"
+  },
+  {
+    "id": "course-044",
+    "title": "IoT with Raspberry Pi",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "GPIO pins, sensors, actuators, and communicating over I2C and SPI were the hardware fundamentals",
+    "skills": [
+      "Embedded Systems",
+      "Hardware"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes IoT with Raspberry Pi through the technical topic: GPIO pins, sensors, actuators, and communicating over I2C and SPI were the hardware fundamentals"
+  },
+  {
+    "id": "course-045",
+    "title": "Java Programming Basics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Working with ArrayLists, HashMaps, exception handling, and file I/O was very foundational",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Java Programming Basics through the technical topic: Working with ArrayLists, HashMaps, exception handling, and file I/O was very foundational"
+  },
+  {
+    "id": "course-046",
+    "title": "JavaScript Full Stack Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "REST API integration, database connectivity, and JWT authentication were all implemented end to end",
+    "skills": [
+      "Frontend Development",
+      "JavaScript",
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes JavaScript Full Stack Development through the technical topic: REST API integration, database connectivity, and JWT authentication were all implemented end to end"
+  },
+  {
+    "id": "course-047",
+    "title": "JavaScript Fundamentals",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Topics like closures, hoisting, and the event loop were demystified in a very approachable way",
+    "skills": [
+      "Frontend Development",
+      "JavaScript",
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes JavaScript Fundamentals through the technical topic: Topics like closures, hoisting, and the event loop were demystified in a very approachable way"
+  },
+  {
+    "id": "course-048",
+    "title": "Kubernetes Orchestration",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Rolling updates, health checks with liveness and readiness probes, and horizontal pod autoscaling were key",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Kubernetes Orchestration through the technical topic: Rolling updates, health checks with liveness and readiness probes, and horizontal pod autoscaling were key"
+  },
+  {
+    "id": "course-049",
+    "title": "Linear Algebra for Machine Learning",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Vectors, matrices, dot products, matrix multiplication, and eigenvalues were all connected to ML applications",
+    "skills": [
+      "Machine Learning",
+      "Modeling",
+      "Mathematics",
+      "Statistics"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Linear Algebra for Machine Learning through the technical topic: Vectors, matrices, dot products, matrix multiplication, and eigenvalues were all connected to ML applications"
+  },
+  {
+    "id": "course-050",
+    "title": "Linux Command Line Essentials",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Understanding pipes, redirects, environment variables, and cron jobs made Linux administration practical",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Linux Command Line Essentials through the technical topic: Understanding pipes, redirects, environment variables, and cron jobs made Linux administration practical"
+  },
+  {
+    "id": "course-051",
+    "title": "Machine Learning Fundamentals",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The pipeline for data preprocessing, model selection, and hyperparameter tuning was a great framework",
+    "skills": [
+      "Machine Learning",
+      "Modeling"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners",
+      "Probability and Statistics"
+    ],
+    "catalogFact": "The uploaded dataset describes Machine Learning Fundamentals through the technical topic: The pipeline for data preprocessing, model selection, and hyperparameter tuning was a great framework"
+  },
+  {
+    "id": "course-052",
+    "title": "MLOps and Model Deployment",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building ML pipelines with Airflow, versioning models with MLflow, and monitoring with Prometheus were covered",
+    "skills": [
+      "Cloud",
+      "Deployment"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes MLOps and Model Deployment through the technical topic: Building ML pipelines with Airflow, versioning models with MLflow, and monitoring with Prometheus were covered"
+  },
+  {
+    "id": "course-053",
+    "title": "Modern JavaScript ES6 Plus",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Arrow functions, destructuring, spread operators, and template literals were all covered thoroughly",
+    "skills": [
+      "Frontend Development",
+      "JavaScript",
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Modern JavaScript ES6 Plus through the technical topic: Arrow functions, destructuring, spread operators, and template literals were all covered thoroughly"
+  },
+  {
+    "id": "course-054",
+    "title": "MongoDB for Developers",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Replica sets, sharding concepts, and using Mongoose with Node.js completed the MongoDB developer toolkit",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes MongoDB for Developers through the technical topic: Replica sets, sharding concepts, and using Mongoose with Node.js completed the MongoDB developer toolkit"
+  },
+  {
+    "id": "course-055",
+    "title": "Natural Language Processing",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "TF-IDF vectorization, word embeddings with Word2Vec, and sentiment analysis were key practical topics",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Natural Language Processing through the technical topic: TF-IDF vectorization, word embeddings with Word2Vec, and sentiment analysis were key practical topics"
+  },
+  {
+    "id": "course-056",
+    "title": "Node.js Backend Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building RESTful APIs with Express, handling middleware, and connecting to MongoDB were central topics",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes Node.js Backend Development through the technical topic: Building RESTful APIs with Express, handling middleware, and connecting to MongoDB were central topics"
+  },
+  {
+    "id": "course-057",
+    "title": "PostgreSQL Database Design",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Indexes, constraints, sequences, and stored procedures were all covered with PostgreSQL-specific syntax",
+    "skills": [
+      "SQL",
+      "Data Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes PostgreSQL Database Design through the technical topic: Indexes, constraints, sequences, and stored procedures were all covered with PostgreSQL-specific syntax"
+  },
+  {
+    "id": "course-058",
+    "title": "Power BI Dashboard Creation",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Creating visuals like KPI cards, slicers, maps, and decomposition trees made dashboards insightful",
+    "skills": [
+      "Data Analysis",
+      "Visualization"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Power BI Dashboard Creation through the technical topic: Creating visuals like KPI cards, slicers, maps, and decomposition trees made dashboards insightful"
+  },
+  {
+    "id": "course-059",
+    "title": "Probability and Statistics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Probability distributions, expected value, variance, and the central limit theorem were explained intuitively",
+    "skills": [
+      "Mathematics",
+      "Statistics"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Probability and Statistics through the technical topic: Probability distributions, expected value, variance, and the central limit theorem were explained intuitively"
+  },
+  {
+    "id": "course-060",
+    "title": "Python Automation and Scripting",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The sections on working with APIs, sending emails, and managing directories saved me hours of manual work",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Python Automation and Scripting through the technical topic: The sections on working with APIs, sending emails, and managing directories saved me hours of manual work"
+  },
+  {
+    "id": "course-061",
+    "title": "Python for Absolute Beginners",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Topics like variables, loops, and functions were explained in a very beginner-friendly way",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Python for Absolute Beginners through the technical topic: Topics like variables, loops, and functions were explained in a very beginner-friendly way"
+  },
+  {
+    "id": "course-062",
+    "title": "Python for Data Science",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Data wrangling, merging datasets, and handling missing values were all addressed thoroughly",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Python for Data Science through the technical topic: Data wrangling, merging datasets, and handling missing values were all addressed thoroughly"
+  },
+  {
+    "id": "course-063",
+    "title": "Python OOP Concepts",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Method resolution order, composition versus inheritance, and property decorators were all covered well",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Python OOP Concepts through the technical topic: Method resolution order, composition versus inheritance, and property decorators were all covered well"
+  },
+  {
+    "id": "course-064",
+    "title": "Python Programming Masterclass",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The sections on list comprehensions, decorators, and iterators were exceptionally well covered",
+    "skills": [
+      "Python",
+      "Programming"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Python Programming Masterclass through the technical topic: The sections on list comprehensions, decorators, and iterators were exceptionally well covered"
+  },
+  {
+    "id": "course-065",
+    "title": "React Native Mobile Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "JSX components, StyleSheet, Flexbox layout, and platform-specific code were React Native essentials covered",
+    "skills": [
+      "Frontend Development",
+      "JavaScript",
+      "Mobile Development",
+      "App Development"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes React Native Mobile Development through the technical topic: JSX components, StyleSheet, Flexbox layout, and platform-specific code were React Native essentials covered"
+  },
+  {
+    "id": "course-066",
+    "title": "React.js Development",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building reusable components, passing props, and managing side effects became second nature",
+    "skills": [
+      "Frontend Development",
+      "JavaScript"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes React.js Development through the technical topic: Building reusable components, passing props, and managing side effects became second nature"
+  },
+  {
+    "id": "course-067",
+    "title": "Redis Caching Strategies",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "String, hash, list, set, and sorted set data structures in Redis were all demonstrated with real use cases",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Redis Caching Strategies through the technical topic: String, hash, list, set, and sorted set data structures in Redis were all demonstrated with real use cases"
+  },
+  {
+    "id": "course-068",
+    "title": "Reinforcement Learning Basics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The concepts of agent, environment, reward, policy, and value function were carefully laid out",
+    "skills": [
+      "Deep Learning",
+      "Modeling"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Reinforcement Learning Basics through the technical topic: The concepts of agent, environment, reward, policy, and value function were carefully laid out"
+  },
+  {
+    "id": "course-069",
+    "title": "Responsive Web Design",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Building layouts that adapt to phones, tablets, and desktops reinforced my understanding of responsiveness",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Responsive Web Design through the technical topic: Building layouts that adapt to phones, tablets, and desktops reinforced my understanding of responsiveness"
+  },
+  {
+    "id": "course-070",
+    "title": "REST API Design Principles",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "The discussion on idempotency, pagination, filtering, and HATEOAS gave me a solid API design vocabulary",
+    "skills": [
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes REST API Design Principles through the technical topic: The discussion on idempotency, pagination, filtering, and HATEOAS gave me a solid API design vocabulary"
+  },
+  {
+    "id": "course-071",
+    "title": "Smart Contract Programming with Solidity",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Interacting with contracts using Web3.js, avoiding common vulnerabilities like reentrancy, and using Hardhat for testing were highlights",
+    "skills": [
+      "Blockchain",
+      "Smart Contracts"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Smart Contract Programming with Solidity through the technical topic: Interacting with contracts using Web3.js, avoiding common vulnerabilities like reentrancy, and using Hardhat for testing were highlights"
+  },
+  {
+    "id": "course-072",
+    "title": "SQL for Beginners",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "JOINs between tables, subqueries, and basic INSERT, UPDATE, and DELETE operations built a solid foundation",
+    "skills": [
+      "SQL",
+      "Data Modeling"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes SQL for Beginners through the technical topic: JOINs between tables, subqueries, and basic INSERT, UPDATE, and DELETE operations built a solid foundation"
+  },
+  {
+    "id": "course-073",
+    "title": "Statistical Analysis with R",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Using R for descriptive statistics, hypothesis testing, and regression analysis was very methodical",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Statistical Analysis with R through the technical topic: Using R for descriptive statistics, hypothesis testing, and regression analysis was very methodical"
+  },
+  {
+    "id": "course-074",
+    "title": "Supervised Learning Algorithms",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Precision-recall curves, ROC curves, and feature importance plots made model evaluation comprehensive",
+    "skills": [
+      "Machine Learning",
+      "Modeling",
+      "Backend Development",
+      "APIs"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Supervised Learning Algorithms through the technical topic: Precision-recall curves, ROC curves, and feature importance plots made model evaluation comprehensive"
+  },
+  {
+    "id": "course-075",
+    "title": "Tableau for Business Analytics",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Publishing dashboards to Tableau Server and embedding them in web pages completed the business analytics workflow",
+    "skills": [
+      "Data Analysis",
+      "Visualization"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Tableau for Business Analytics through the technical topic: Publishing dashboards to Tableau Server and embedding them in web pages completed the business analytics workflow"
+  },
+  {
+    "id": "course-076",
+    "title": "Time Series Analysis",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Stationarity, autocorrelation, ARIMA modeling, and seasonal decomposition were the foundation of this course",
+    "skills": [
+      "Programming",
+      "Problem Solving"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Time Series Analysis through the technical topic: Stationarity, autocorrelation, ARIMA modeling, and seasonal decomposition were the foundation of this course"
+  },
+  {
+    "id": "course-077",
+    "title": "Transfer Learning and Fine-tuning",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Freezing layers, adjusting learning rates for different layers, and monitoring for catastrophic forgetting were covered",
+    "skills": [
+      "Deep Learning",
+      "Modeling"
+    ],
+    "level": "Advanced",
+    "durationHours": 24,
+    "format": "Guided course",
+    "prerequisites": [
+      "Python for Absolute Beginners"
+    ],
+    "catalogFact": "The uploaded dataset describes Transfer Learning and Fine-tuning through the technical topic: Freezing layers, adjusting learning rates for different layers, and monitoring for catastrophic forgetting were covered"
+  },
+  {
+    "id": "course-078",
+    "title": "TypeScript for Developers",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "Static typing, interfaces, enums, and generics were the foundation of what made TypeScript click for me",
+    "skills": [
+      "Frontend Development",
+      "JavaScript"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes TypeScript for Developers through the technical topic: Static typing, interfaces, enums, and generics were the foundation of what made TypeScript click for me"
+  },
+  {
+    "id": "course-079",
+    "title": "Unsupervised Learning Techniques",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "K-means clustering, DBSCAN, hierarchical clustering, and silhouette scores were all covered in depth",
+    "skills": [
+      "Machine Learning",
+      "Modeling"
+    ],
+    "level": "Intermediate",
+    "durationHours": 16,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "The uploaded dataset describes Unsupervised Learning Techniques through the technical topic: K-means clustering, DBSCAN, hierarchical clustering, and silhouette scores were all covered in depth"
+  },
+  {
+    "id": "course-080",
+    "title": "Vue.js for Beginners",
+    "type": "course",
+    "provider": "Pathwise catalog",
+    "source": "uploaded-training-data",
+    "description": "I appreciated how Vue's reactivity system and component communication were demonstrated through real examples",
+    "skills": [
+      "Frontend Development",
+      "JavaScript"
+    ],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [
+      "JavaScript Fundamentals"
+    ],
+    "catalogFact": "The uploaded dataset describes Vue.js for Beginners through the technical topic: I appreciated how Vue's reactivity system and component communication were demonstrated through real examples"
+  }
+]

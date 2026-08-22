@@ -1,0 +1,11 @@
+{
+  "task_kind": "new-document",
+  "output": "pdf",
+  "signals": [],
+  "hard_constraints": ["competition solution documentation", "problem understanding", "system architecture", "AI and ML techniques", "key features", "workflow", "challenges"],
+  "content_features": {
+    "code_blocks": 0,
+    "defined_terms": 5,
+    "portrait_images": 0
+  }
+}

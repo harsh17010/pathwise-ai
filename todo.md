@@ -1,0 +1,24 @@
+# Project TODO
+
+- [x] Normalize the uploaded 80-course recommendation dataset into a documented catalog with inferred skills, levels, durations, and prerequisite metadata.
+- [x] Add a small deterministic fallback catalog and seed/import workflow for dependable local and deployed runs.
+- [x] Create database schema and server contracts for learner profiles, catalog entries, skills, paths, milestones, feedback, progress, and contextual chat.
+- [x] Implement a deterministic hybrid recommendation service with skill-gap scoring, prerequisite ordering, format/time fit, feedback adaptation, and catalog-grounded reasons.
+- [x] Implement server-side LLM profile extraction, roadmap explanation, and contextual learner assistant with structured validation and no invented course details.
+- [x] Build a natural-language goal capture flow with editable current level, known skills, timeline, weekly availability, and preferred learning format.
+- [x] Build a responsive, accessible dark-navy overview dashboard with warm electric-lime and amber progress accents, compact visualizations, visible focus states, and reduced-motion support.
+- [x] Add compulsory 3D visual structure and interaction depth to the dashboard and roadmap experience without impairing usability.
+- [x] Build roadmap, skills, profile, and assistant views with milestones, rationales, progress metrics, and next-action guidance.
+- [x] Allow learners to complete, skip, defer, and rate roadmap items, with an explanation whenever the recommendation sequence changes.
+- [x] Add automated tests for recommendation, prerequisite, feedback-adaptation, validation, and API behavior.
+- [x] Verify responsive behavior and key flows in the browser, then fix visual and functional issues.
+- [x] Write README, data dictionary, solution documentation, demo script, and final submission checklist.
+- [x] Produce a clean source-code ZIP and prepare GitHub/deployment handoff instructions.
+- [ ] Create the evaluator-accessible GitHub repository after the GitHub integration is enabled and confirmed.
+- [ ] Publish the final checkpoint using the Publish control and record the evaluator URL.
+- [x] Add persistent catalog, skill, milestone, and progress entities plus database helper coverage for saving and restoring learner state.
+- [x] Add a dedicated catalog-grounded roadmap-explanation procedure with structured LLM output and deterministic fallback.
+- [x] Restore a distinct Skip action and provide clear rating choices that each trigger an explained path adaptation.
+- [ ] Exercise the complete live learner workflow and error/empty states after persistence and feedback updates.
+- [x] Add feedback and chat-history save/load contracts plus full path restoration for milestones and progress history.
+- [x] Expand item ratings to the complete supported feedback set and verify each selection produces an adaptation explanation.

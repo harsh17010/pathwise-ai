@@ -1,4 +1,63 @@
 @import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+}
+
+:root {
+  --background: oklch(0.14 0.035 255);
+  --foreground: oklch(0.96 0.012 100);
+  --card: oklch(0.18 0.035 255);
+  --card-foreground: oklch(0.96 0.012 100);
+  --popover: oklch(0.19 0.035 255);
+  --popover-foreground: oklch(0.96 0.012 100);
+  --primary: oklch(0.88 0.19 115);
+  --primary-foreground: oklch(0.18 0.04 255);
+  --secondary: oklch(0.26 0.04 255);
+  --secondary-foreground: oklch(0.93 0.012 100);
+  --muted: oklch(0.25 0.035 255);
+  --muted-foreground: oklch(0.73 0.025 255);
+  --accent: oklch(0.79 0.16 80);
+  --accent-foreground: oklch(0.18 0.04 255);
+  --border: oklch(0.32 0.04 255);
+  --input: oklch(0.25 0.035 255);
+  --ring: oklch(0.88 0.19 115);
+  --radius: 0.9rem;
+}
+
+* { border-color: var(--border); }
+body {
+  margin: 0;
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at 86% 0%, oklch(0.33 0.105 115 / 0.18), transparent 32rem),
+    radial-gradient(circle at 8% 100%, oklch(0.32 0.08 70 / 0.13), transparent 28rem),
+    var(--background);
+  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+.mesh-grid {
+  background-image: linear-gradient(oklch(1 0 0 / 0.035) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+.glass-panel {
+  background: linear-gradient(135deg, oklch(0.23 0.04 255 / 0.94), oklch(0.17 0.03 255 / 0.88));
+  border: 1px solid oklch(0.78 0.06 115 / 0.16);
+  box-shadow: 0 20px 60px oklch(0.05 0.02 255 / 0.32), inset 0 1px 0 oklch(1 0 0 / 0.08);
+  backdrop-filter: blur(20px);
+}
+.three-d-stage { perspective: 1000px; }
+.three-d-card {
+  transform: rotateX(3deg) rotateY(-2deg) translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.three-d-card:hover { transform: rotateX(0deg) rotateY(0deg) translateZ(12px); box-shadow: 0 30px 80px oklch(0.04 0.02 255 / 0.5); }
+.orbit { transform-style: preserve-3d; animation: orbit 11s linear infinite; }
+.orbit-dot { transform: translateZ(26px); }
+@keyframes orbit { from { transform: rotateY(0deg) rotateX(12deg); } to { transform: rotateY(360deg) rotateX(12deg); } }
+@media (prefers-reduced-motion: reduce) { .three-d-card, .three-d-card:hover { transform: none; transition: none; } .orbit { animation: none; } }
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));

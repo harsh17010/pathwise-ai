@@ -1,0 +1,10 @@
+{
+  "entry": "main.typ",
+  "metadata": {
+    "author": "Manus AI",
+    "subtitle": "Adaptive, Explainable Personalized Learning Paths",
+    "title": "Pathwise AI"
+  },
+  "mode": "report",
+  "theme": "report-theme.typ"
+}

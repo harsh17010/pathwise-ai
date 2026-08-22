@@ -1,0 +1,44 @@
+[
+  {
+    "id": "fallback-python",
+    "title": "Python Foundations",
+    "type": "course",
+    "provider": "Pathwise fallback",
+    "source": "fallback",
+    "description": "Variables, control flow, functions, and data structures for new learners.",
+    "skills": ["Python", "Programming"],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Guided course",
+    "prerequisites": [],
+    "catalogFact": "Fallback item available when the uploaded catalog is not loaded."
+  },
+  {
+    "id": "fallback-sql",
+    "title": "SQL Foundations",
+    "type": "course",
+    "provider": "Pathwise fallback",
+    "source": "fallback",
+    "description": "Queries, joins, aggregation, and data analysis workflows.",
+    "skills": ["SQL", "Data Analysis"],
+    "level": "Beginner",
+    "durationHours": 10,
+    "format": "Hands-on course",
+    "prerequisites": [],
+    "catalogFact": "Fallback item available when the uploaded catalog is not loaded."
+  },
+  {
+    "id": "fallback-analysis-project",
+    "title": "Data Analysis Portfolio Project",
+    "type": "project",
+    "provider": "Pathwise fallback",
+    "source": "fallback",
+    "description": "Analyze a public dataset and present a clear evidence-based story.",
+    "skills": ["Data Analysis", "Visualization", "Communication"],
+    "level": "Intermediate",
+    "durationHours": 12,
+    "format": "Project",
+    "prerequisites": ["Python Foundations", "SQL Foundations"],
+    "catalogFact": "Fallback project that validates applied skills after core study."
+  }
+]
