@@ -27,5 +27,13 @@
 - [x] Enrich the overview with a high-value learning-path visualization and polished empty-state storytelling.
 - [x] Refine typography, color semantics, ambient depth, and interaction states for a more distinctive premium finish.
 - [x] Verify the refined visual system at desktop and mobile sizes before delivery.
+- [x] Add a guided learner discovery flow that asks focused follow-up questions and confirms the profile before roadmap generation.
+- [x] Integrate guided conversation answers with the editable profile and deterministic roadmap creation flow.
+- [x] Fix trajectory and roadmap stage animations so every step animates after a new path is generated.
+- [x] Add tests and visual checks for guided confirmation, roadmap handoff, and post-generation motion continuity.
+- [x] Add deterministic guided-step helpers and test confirmation readiness plus the roadmap-handoff input.
+- [x] Add a presentation-safe generated-roadmap view for end-to-end visual verification of all stage animations.
+- [x] Capture desktop and mobile post-generation roadmap verification after the guided-flow handoff.
+- [x] Route the guided confirmation callback through a shared handoff handler and verify that exact handler with a presentation-safe guided preview.
 - [x] Add feedback and chat-history save/load contracts plus full path restoration for milestones and progress history.
 - [x] Expand item ratings to the complete supported feedback set and verify each selection produces an adaptation explanation.

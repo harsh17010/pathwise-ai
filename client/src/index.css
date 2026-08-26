@@ -119,6 +119,18 @@ body {
 .brand-route--three { width: 1.05rem; left: 0.72rem; top: 1.6rem; transform: rotate(-18deg); }
 .brand-wordmark { letter-spacing: -0.045em; font-size: 1.08rem; }
 .path-facts span { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid oklch(0.88 0.19 115 / 0.16); border-radius: 999px; padding: 0.3rem 0.55rem; color: oklch(0.9 0.07 115); background: oklch(0.88 0.19 115 / 0.055); font-size: 0.67rem; font-weight: 700; letter-spacing: 0.02em; box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.06); }
+.guided-discovery { position: relative; overflow: hidden; background: linear-gradient(120deg, oklch(0.2 0.04 255 / 0.98), oklch(0.16 0.03 255 / 0.94)); }
+.guided-discovery::after { content: ""; pointer-events: none; position: absolute; width: 18rem; height: 18rem; right: -10rem; top: -12rem; border-radius: 999px; background: radial-gradient(circle, oklch(0.88 0.19 115 / 0.16), transparent 68%); filter: blur(6px); }
+.guided-discovery > * { position: relative; z-index: 1; }
+.guided-discovery__avatar { color: oklch(0.16 0.03 255); background: linear-gradient(145deg, oklch(0.9 0.18 115), oklch(0.72 0.16 115)); box-shadow: 0 0 0 6px oklch(0.88 0.19 115 / 0.08), 0 10px 24px oklch(0.88 0.19 115 / 0.24); }
+.guided-progress span { display: block; height: 3px; flex: 1; border-radius: 999px; background: oklch(0.36 0.03 255); transition: background 240ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 240ms cubic-bezier(0.23, 1, 0.32, 1); }
+.guided-progress span.is-active { background: linear-gradient(90deg, oklch(0.76 0.18 115), oklch(0.94 0.14 115)); box-shadow: 0 0 14px oklch(0.88 0.19 115 / 0.45); }
+.guided-question { box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.06), 0 14px 30px oklch(0.04 0.02 255 / 0.16); }
+.guided-choice { display: inline-flex; min-height: 2.35rem; align-items: center; justify-content: center; gap: 0.35rem; border: 1px solid oklch(0.4 0.035 255); border-radius: 0.7rem; padding: 0.55rem 0.65rem; background: oklch(0.16 0.025 255 / 0.62); color: oklch(0.77 0.025 255); font-size: 0.72rem; font-weight: 700; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), border-color 160ms cubic-bezier(0.23, 1, 0.32, 1), background 160ms cubic-bezier(0.23, 1, 0.32, 1); }
+.guided-choice:hover { transform: translateY(-2px); border-color: oklch(0.88 0.19 115 / 0.55); color: oklch(0.92 0.06 115); }
+.guided-choice:active { transform: translateY(1px) scale(0.98); }
+.guided-choice.is-selected { border-color: oklch(0.88 0.19 115 / 0.72); background: oklch(0.88 0.19 115 / 0.16); color: oklch(0.92 0.07 115); box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.08), 0 0 18px oklch(0.88 0.19 115 / 0.1); }
+.guided-confirmation { animation: confirm-reveal 360ms cubic-bezier(0.23, 1, 0.32, 1) both; }
 .trajectory-rail { position: relative; }
 .trajectory-stop { position: relative; z-index: 2; display: grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid oklch(0.45 0.04 255); border-radius: 999px; background: linear-gradient(145deg, oklch(0.28 0.04 255), oklch(0.17 0.03 255)); color: oklch(0.7 0.03 255); font-family: var(--font-mono); font-size: 0.68rem; box-shadow: 0 8px 15px oklch(0.04 0.02 255 / 0.34), inset 0 1px 0 oklch(1 0 0 / 0.08); animation: stop-rise 520ms cubic-bezier(0.23, 1, 0.32, 1) both; }
 .trajectory-stop--current { border-color: oklch(0.82 0.17 80 / 0.8); color: oklch(0.2 0.04 80); background: linear-gradient(145deg, oklch(0.9 0.16 80), oklch(0.72 0.16 80)); box-shadow: 0 0 0 6px oklch(0.79 0.16 80 / 0.1), 0 10px 22px oklch(0.79 0.16 80 / 0.34); }
@@ -141,7 +153,7 @@ body {
 .trajectory-hologram::after { content: ""; pointer-events: none; position: absolute; inset: auto -20% 0; height: 40%; opacity: 0.34; background: linear-gradient(transparent, oklch(0.88 0.19 115 / 0.1)); transform: skewY(-8deg) translateZ(-1px); }
 .three-d-bar { position: relative; transform: translateZ(12px) rotateX(-5deg); box-shadow: 0 10px 18px oklch(0.04 0.02 255 / 0.36); animation: bar-rise 620ms cubic-bezier(0.23, 1, 0.32, 1) both; }
 .three-d-bar::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, oklch(1 0 0 / 0.18), transparent 42%); }
-.roadmap-card { transform-origin: center bottom; }
+.roadmap-card { transform-origin: center bottom; animation: roadmap-card-reveal 520ms cubic-bezier(0.23, 1, 0.32, 1) both; }
 .roadmap-card::after { content: ""; position: absolute; left: 1.15rem; top: 4.25rem; bottom: -2rem; width: 1px; opacity: 0.5; background: linear-gradient(oklch(0.88 0.19 115 / 0.8), transparent); transform: translateZ(-1px); }
 .progress-orb { position: relative; transform: rotateX(8deg) rotateY(-10deg); box-shadow: inset 0 0 38px oklch(0.02 0.01 255 / 0.58), 0 25px 38px oklch(0.04 0.02 255 / 0.45), 0 0 0 1px oklch(0.88 0.19 115 / 0.14); animation: orb-breathe 4s ease-in-out infinite; }
 @keyframes orbit { from { transform: rotateX(61deg) rotateZ(0deg); } to { transform: rotateX(61deg) rotateZ(360deg); } }
@@ -155,7 +167,9 @@ body {
 @keyframes orb-breathe { 0%, 100% { box-shadow: inset 0 0 38px oklch(0.02 0.01 255 / 0.58), 0 25px 38px oklch(0.04 0.02 255 / 0.45), 0 0 0 1px oklch(0.88 0.19 115 / 0.14); } 50% { box-shadow: inset 0 0 38px oklch(0.02 0.01 255 / 0.58), 0 30px 48px oklch(0.04 0.02 255 / 0.55), 0 0 34px oklch(0.88 0.19 115 / 0.22); } }
 @keyframes stop-rise { from { opacity: 0; transform: translateY(10px) scale(0.82); } to { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes insight-sheen { 0%, 55% { transform: translateX(-120%); } 80%, 100% { transform: translateX(120%); } }
-@media (prefers-reduced-motion: reduce) { .hero-3d-shell::before, .hero-3d-shell::after, .three-d-card, .three-d-card:hover, .three-d-card::before, .energy-button, .energy-button::after, .path-constellation, .constellation-glow, .orbit, .orbital-core, .path-node, .three-d-bar, .progress-orb, .trajectory-stop, .trajectory-insight::after { animation: none !important; transform: none !important; transition: none !important; } .three-d-card::before, .trajectory-hologram::after, .roadmap-card::after { display: none; } }
+@keyframes roadmap-card-reveal { from { opacity: 0; transform: translate3d(0, 20px, -20px) rotateX(7deg); } to { opacity: 1; transform: translate3d(0, 0, 0) rotateX(4deg); } }
+@keyframes confirm-reveal { from { opacity: 0; transform: translateY(8px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .hero-3d-shell::before, .hero-3d-shell::after, .three-d-card, .three-d-card:hover, .three-d-card::before, .energy-button, .energy-button::after, .path-constellation, .constellation-glow, .orbit, .orbital-core, .path-node, .three-d-bar, .progress-orb, .trajectory-stop, .trajectory-insight::after, .guided-confirmation { animation: none !important; transform: none !important; transition: none !important; } .three-d-card::before, .trajectory-hologram::after, .roadmap-card::after { display: none; } }
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));

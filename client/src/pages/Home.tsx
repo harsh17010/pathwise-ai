@@ -1,4 +1,5 @@
 import { AIChatBox, type Message } from "@/components/AIChatBox";
+import { GuidedPathDiscovery } from "@/components/GuidedPathDiscovery";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,7 +29,7 @@ import {
   TimerReset,
   UserRound,
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type Level = "Beginner" | "Intermediate" | "Advanced";
 type Format = "Guided course" | "Hands-on course" | "Project" | "Self-paced";
@@ -118,7 +119,13 @@ function Stat({
 
 export default function Home() {
   const [activeView, setActiveView] =
-    useState<(typeof navigation)[number][0]>("overview");
+    useState<(typeof navigation)[number][0]>(() => {
+      if (typeof window === "undefined") return "overview";
+      const requested = new URLSearchParams(window.location.search).get("view");
+      return navigation.some(([id]) => id === requested)
+        ? (requested as (typeof navigation)[number][0])
+        : "overview";
+    });
   const [goal, setGoal] = useState(
     "I want to become a job-ready data analyst in 12 weeks. I know Excel and can study six hours each week. I learn best by doing projects."
   );
@@ -136,6 +143,10 @@ export default function Home() {
   );
   const [messages, setMessages] = useState<Message[]>([]);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [trajectoryRevision, setTrajectoryRevision] = useState(0);
+  const [previewRoadmap] = useState(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("preview") === "roadmap");
+  const [guidedPreview] = useState(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("preview") === "guided");
+  const previewRequested = useRef(false);
 
   const profile = useMemo(
     () => ({
@@ -164,10 +175,11 @@ export default function Home() {
     onSuccess: ({ explanation }) => setAdaptationNote(explanation.summary),
   });
   const generatePath = trpc.learning.buildRoadmap.useMutation({
-    onSuccess: data => {
+    onSuccess: (data, confirmedProfile) => {
       setRoadmap(data);
+      setTrajectoryRevision(current => current + 1);
       setAdaptationNote(data.rationale);
-      explainPath.mutate({ profile, items: data.items });
+      explainPath.mutate({ profile: confirmedProfile, items: data.items });
       setActiveView("roadmap");
     },
   });
@@ -195,6 +207,26 @@ export default function Home() {
         },
       ]),
   });
+
+  const handleConfirmedProfile = (confirmed: typeof profile) => {
+    setGoal(confirmed.goal);
+    setCurrentLevel(confirmed.currentLevel);
+    setKnownSkills(confirmed.knownSkills.join(", "));
+    setTimelineWeeks(confirmed.timelineWeeks);
+    setWeeklyHours(confirmed.weeklyHours);
+    setFormats(confirmed.preferredFormats);
+    generatePath.mutate(confirmed);
+  };
+
+  useEffect(() => {
+    if ((previewRoadmap || guidedPreview) && !previewRequested.current && !roadmap && !generatePath.isPending) {
+      previewRequested.current = true;
+      handleConfirmedProfile(guidedPreview ? {
+        ...profile,
+        goal: "I want to become a job-ready data analyst in 12 weeks. I know Excel and can study six hours each week. I learn best by doing projects.",
+      } : profile);
+    }
+  }, [generatePath, guidedPreview, previewRoadmap, profile, roadmap]);
 
   const completion = roadmap
     ? Math.round(
@@ -334,7 +366,7 @@ export default function Home() {
             </div>
             <BarChart3 className="size-5 text-lime-300" />
           </div>
-          <div className="trajectory-rail mt-8 grid grid-cols-6 gap-1.5 sm:gap-3">
+          <div key={`trajectory-${trajectoryRevision}`} className="trajectory-rail mt-8 grid grid-cols-6 gap-1.5 sm:gap-3">
             {trajectoryLabels.map((label, index) => {
               const item = roadmap?.items[index];
               const isComplete = item?.status === "completed";
@@ -396,7 +428,13 @@ export default function Home() {
   );
 
   const renderProfile = () => (
-    <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+    <div className="space-y-6">
+      <GuidedPathDiscovery
+        initialProfile={profile}
+        isCreating={generatePath.isPending}
+        onConfirm={handleConfirmedProfile}
+      />
+      <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
       <section className="glass-panel rounded-2xl p-5 sm:p-7 three-d-card">
         <div className="flex items-start gap-3">
           <div className="rounded-xl bg-lime-300/10 p-2">
@@ -574,6 +612,7 @@ export default function Home() {
           </div>
         </div>
       </aside>
+      </div>
     </div>
   );
 
@@ -642,11 +681,12 @@ export default function Home() {
           <div className="space-y-4 three-d-stage">
             {roadmap.items.map((item, index) => (
               <article
-                key={item.id}
+                key={`${trajectoryRevision}-${item.id}`}
                 className={cn(
                   "glass-panel roadmap-card rounded-2xl p-5 three-d-card",
                   item.status === "completed" && "border-lime-300/35"
                 )}
+                style={{ animationDelay: `${index * 90}ms` }}
               >
                 <div className="flex gap-4">
                   <div
@@ -687,7 +727,7 @@ export default function Home() {
                         {item.durationHours}h
                       </div>
                     </div>
-                    <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_auto]">
+                    <div className="mt-4 flex flex-col gap-3">
                       <div className="rounded-xl border border-lime-300/10 bg-lime-300/5 p-3 text-xs leading-5 text-lime-100">
                         <Lightbulb className="mr-1 inline size-3.5 text-lime-300" />
                         <strong>Why this now:</strong> {item.reason}
