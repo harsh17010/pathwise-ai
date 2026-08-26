@@ -47,17 +47,98 @@ body {
   box-shadow: 0 20px 60px oklch(0.05 0.02 255 / 0.32), inset 0 1px 0 oklch(1 0 0 / 0.08);
   backdrop-filter: blur(20px);
 }
-.three-d-stage { perspective: 1000px; }
-.three-d-card {
-  transform: rotateX(3deg) rotateY(-2deg) translateZ(0);
-  transform-style: preserve-3d;
-  transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 220ms cubic-bezier(0.23, 1, 0.32, 1);
+.three-d-stage { perspective: 1200px; transform-style: preserve-3d; }
+.hero-3d-shell::before,
+.hero-3d-shell::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(1px);
 }
-.three-d-card:hover { transform: rotateX(0deg) rotateY(0deg) translateZ(12px); box-shadow: 0 30px 80px oklch(0.04 0.02 255 / 0.5); }
+.hero-3d-shell::before {
+  width: 15rem;
+  height: 15rem;
+  right: -5rem;
+  top: -7rem;
+  background: radial-gradient(circle, oklch(0.88 0.19 115 / 0.18), transparent 68%);
+  transform: translateZ(-1px);
+  animation: aurora-drift 11s ease-in-out infinite alternate;
+}
+.hero-3d-shell::after {
+  width: 9rem;
+  height: 9rem;
+  left: 46%;
+  bottom: -6rem;
+  background: radial-gradient(circle, oklch(0.79 0.16 80 / 0.12), transparent 70%);
+  animation: aurora-drift 9s ease-in-out infinite alternate-reverse;
+}
+.three-d-card {
+  position: relative;
+  overflow: hidden;
+  transform: rotateX(4deg) rotateY(-2.5deg) translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform 280ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 280ms cubic-bezier(0.23, 1, 0.32, 1), border-color 280ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.three-d-card::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(122deg, transparent 35%, oklch(1 0 0 / 0.14) 48%, transparent 61%);
+  transform: translateX(-115%);
+  transition: opacity 180ms ease-out, transform 650ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.three-d-card:hover { transform: rotateX(0deg) rotateY(0deg) translate3d(0, -4px, 18px); border-color: oklch(0.88 0.19 115 / 0.36); box-shadow: 0 35px 85px oklch(0.04 0.02 255 / 0.58), inset 0 1px 0 oklch(1 0 0 / 0.13); }
+.three-d-card:hover::before { opacity: 1; transform: translateX(115%); }
+.energy-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  box-shadow: 0 9px 0 oklch(0.44 0.11 115 / 0.52), 0 18px 32px oklch(0.88 0.19 115 / 0.16);
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.energy-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, transparent 34%, oklch(1 0 0 / 0.36) 48%, transparent 63%);
+  transform: translateX(-135%);
+  transition: transform 520ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.energy-button:hover { transform: translateY(-2px) translateZ(8px); box-shadow: 0 12px 0 oklch(0.44 0.11 115 / 0.48), 0 24px 38px oklch(0.88 0.19 115 / 0.24); }
+.energy-button:hover::after { transform: translateX(135%); }
+.energy-button:active { transform: translateY(5px) scale(0.98); box-shadow: 0 4px 0 oklch(0.44 0.11 115 / 0.45), 0 10px 18px oklch(0.88 0.19 115 / 0.16); }
+.path-constellation { perspective: 900px; transform-style: preserve-3d; animation: constellation-float 6s ease-in-out infinite; }
+.constellation-glow { background: radial-gradient(circle, oklch(0.88 0.19 115 / 0.18), transparent 62%); filter: blur(12px); animation: constellation-pulse 4.5s ease-in-out infinite; }
 .orbit { transform-style: preserve-3d; animation: orbit 11s linear infinite; }
-.orbit-dot { transform: translateZ(26px); }
-@keyframes orbit { from { transform: rotateY(0deg) rotateX(12deg); } to { transform: rotateY(360deg) rotateX(12deg); } }
-@media (prefers-reduced-motion: reduce) { .three-d-card, .three-d-card:hover { transform: none; transition: none; } .orbit { animation: none; } }
+.orbit--wide { animation-duration: 14s; transform: rotateX(61deg) rotateZ(-12deg); }
+.orbit--tilted { animation-name: orbit-reverse; animation-duration: 10s; transform: rotateX(48deg) rotateY(22deg); }
+.orbit--inner { animation-duration: 7s; transform: rotateX(70deg) rotateZ(40deg); }
+.orbital-core { border: 1px solid oklch(0.92 0.09 115 / 0.45); background: linear-gradient(145deg, oklch(0.96 0.12 115 / 0.9), oklch(0.52 0.16 115 / 0.4)); box-shadow: 0 0 0 10px oklch(0.88 0.19 115 / 0.04), 0 0 70px oklch(0.88 0.19 115 / 0.52); transform: rotateX(58deg) rotateZ(-35deg) translateZ(28px); animation: core-turn 9s linear infinite; }
+.path-node { width: 0.7rem; height: 0.7rem; border-radius: 999px; border: 2px solid oklch(0.16 0.03 255); box-shadow: 0 0 0 5px oklch(0.88 0.19 115 / 0.1), 0 0 24px oklch(0.88 0.19 115 / 0.9); transform: translateZ(38px); animation: node-pulse 2.2s ease-in-out infinite; }
+.path-node--one { background: oklch(0.82 0.17 80); animation-delay: -0.5s; }
+.path-node--two { background: oklch(0.78 0.14 220); animation-delay: -1.2s; }
+.path-node--three { background: oklch(0.88 0.19 115); animation-delay: -1.7s; }
+.orbital-caption { border: 1px solid oklch(0.88 0.19 115 / 0.24); background: oklch(0.16 0.03 255 / 0.8); box-shadow: 0 10px 25px oklch(0.04 0.02 255 / 0.32); transform: translateZ(35px) rotateX(8deg); }
+.trajectory-hologram::after { content: ""; pointer-events: none; position: absolute; inset: auto -20% 0; height: 40%; opacity: 0.34; background: linear-gradient(transparent, oklch(0.88 0.19 115 / 0.1)); transform: skewY(-8deg) translateZ(-1px); }
+.three-d-bar { position: relative; transform: translateZ(12px) rotateX(-5deg); box-shadow: 0 10px 18px oklch(0.04 0.02 255 / 0.36); animation: bar-rise 620ms cubic-bezier(0.23, 1, 0.32, 1) both; }
+.three-d-bar::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, oklch(1 0 0 / 0.18), transparent 42%); }
+.roadmap-card { transform-origin: center bottom; }
+.roadmap-card::after { content: ""; position: absolute; left: 1.15rem; top: 4.25rem; bottom: -2rem; width: 1px; opacity: 0.5; background: linear-gradient(oklch(0.88 0.19 115 / 0.8), transparent); transform: translateZ(-1px); }
+.progress-orb { position: relative; transform: rotateX(8deg) rotateY(-10deg); box-shadow: inset 0 0 38px oklch(0.02 0.01 255 / 0.58), 0 25px 38px oklch(0.04 0.02 255 / 0.45), 0 0 0 1px oklch(0.88 0.19 115 / 0.14); animation: orb-breathe 4s ease-in-out infinite; }
+@keyframes orbit { from { transform: rotateX(61deg) rotateZ(0deg); } to { transform: rotateX(61deg) rotateZ(360deg); } }
+@keyframes orbit-reverse { from { transform: rotateX(48deg) rotateY(22deg) rotateZ(360deg); } to { transform: rotateX(48deg) rotateY(22deg) rotateZ(0deg); } }
+@keyframes core-turn { from { transform: rotateX(58deg) rotateZ(-35deg) translateZ(28px); } to { transform: rotateX(58deg) rotateZ(325deg) translateZ(28px); } }
+@keyframes constellation-float { 0%, 100% { transform: translate3d(0, 0, 0) rotateY(-4deg); } 50% { transform: translate3d(0, -9px, 18px) rotateY(6deg); } }
+@keyframes constellation-pulse { 0%, 100% { opacity: 0.55; transform: scale(0.9); } 50% { opacity: 1; transform: scale(1.08); } }
+@keyframes node-pulse { 0%, 100% { transform: translateZ(38px) scale(0.86); } 50% { transform: translateZ(48px) scale(1.16); } }
+@keyframes bar-rise { from { opacity: 0; transform: translate3d(0, 20px, 0) rotateX(-18deg); } to { opacity: 1; transform: translateZ(12px) rotateX(-5deg); } }
+@keyframes aurora-drift { from { transform: translate3d(-12px, -8px, 0) scale(0.94); } to { transform: translate3d(18px, 12px, 0) scale(1.1); } }
+@keyframes orb-breathe { 0%, 100% { box-shadow: inset 0 0 38px oklch(0.02 0.01 255 / 0.58), 0 25px 38px oklch(0.04 0.02 255 / 0.45), 0 0 0 1px oklch(0.88 0.19 115 / 0.14); } 50% { box-shadow: inset 0 0 38px oklch(0.02 0.01 255 / 0.58), 0 30px 48px oklch(0.04 0.02 255 / 0.55), 0 0 34px oklch(0.88 0.19 115 / 0.22); } }
+@media (prefers-reduced-motion: reduce) { .hero-3d-shell::before, .hero-3d-shell::after, .three-d-card, .three-d-card:hover, .three-d-card::before, .energy-button, .energy-button::after, .path-constellation, .constellation-glow, .orbit, .orbital-core, .path-node, .three-d-bar, .progress-orb { animation: none !important; transform: none !important; transition: none !important; } .three-d-card::before, .trajectory-hologram::after, .roadmap-card::after { display: none; } }
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));

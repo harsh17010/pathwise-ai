@@ -235,7 +235,7 @@ export default function Home() {
 
   const renderOverview = () => (
     <div className="space-y-6">
-      <section className="three-d-stage overflow-hidden rounded-[1.75rem] glass-panel relative p-6 sm:p-8">
+      <section className="hero-3d-shell three-d-stage overflow-hidden rounded-[1.75rem] glass-panel relative p-6 sm:p-8">
         <div className="absolute inset-0 mesh-grid opacity-60" />
         <div className="relative grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
           <div>
@@ -254,7 +254,7 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-3">
               <Button
                 onClick={() => setActiveView("profile")}
-                className="bg-lime-300 text-slate-950 hover:bg-lime-200"
+                className="energy-button bg-lime-300 text-slate-950 hover:bg-lime-200"
               >
                 Build my path <ChevronRight className="ml-1 size-4" />
               </Button>
@@ -267,12 +267,16 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative mx-auto h-48 w-48 sm:h-56 sm:w-56 three-d-stage">
-            <div className="orbit absolute inset-4 rounded-full border border-lime-300/30" />
-            <div className="orbit absolute inset-11 rounded-full border border-amber-300/30 [animation-duration:8s] [animation-direction:reverse]" />
-            <div className="absolute inset-[32%] rounded-3xl border border-white/10 bg-gradient-to-br from-lime-200/80 to-lime-500/20 shadow-[0_0_80px_rgba(163,230,53,0.35)] [transform:rotateX(55deg)_rotateZ(-30deg)]" />
-            <div className="orbit-dot absolute left-5 top-9 size-3 rounded-full bg-amber-300 shadow-[0_0_28px_rgba(252,211,77,0.9)]" />
-            <div className="orbit-dot absolute bottom-8 right-4 size-2 rounded-full bg-sky-300 shadow-[0_0_22px_rgba(125,211,252,0.9)]" />
+          <div className="path-constellation relative mx-auto h-52 w-52 sm:h-60 sm:w-60" aria-hidden="true">
+            <div className="constellation-glow absolute inset-0 rounded-full" />
+            <div className="orbit orbit--wide absolute inset-1 rounded-full border border-lime-300/30" />
+            <div className="orbit orbit--tilted absolute inset-8 rounded-full border border-sky-300/30" />
+            <div className="orbit orbit--inner absolute inset-[3.4rem] rounded-full border border-amber-300/35" />
+            <div className="orbital-core absolute inset-[31%] rounded-2xl" />
+            <div className="path-node path-node--one absolute left-5 top-10" />
+            <div className="path-node path-node--two absolute right-8 top-6" />
+            <div className="path-node path-node--three absolute bottom-5 left-10" />
+            <div className="orbital-caption absolute bottom-1 right-1 rounded-lg px-2 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-lime-100">Path logic</div>
           </div>
         </div>
       </section>
@@ -305,7 +309,7 @@ export default function Home() {
         />
       </section>
       <section className="grid gap-5 lg:grid-cols-[1.25fr_0.75fr]">
-        <div className="glass-panel rounded-2xl p-5 three-d-card">
+        <div className="glass-panel trajectory-hologram rounded-2xl p-5 three-d-card">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-bold text-white">
@@ -332,14 +336,14 @@ export default function Home() {
               >
                 <div
                   className={cn(
-                    "w-full rounded-t-lg bg-gradient-to-t",
+                    "three-d-bar w-full rounded-t-lg bg-gradient-to-t",
                     item.status === "completed"
                       ? "from-lime-500 to-lime-200"
                       : index === 0
                         ? "from-amber-500 to-amber-200"
                         : "from-slate-700 to-slate-500"
                   )}
-                  style={{ height: `${34 + ((index * 9) % 50)}%` }}
+                  style={{ height: `${34 + ((index * 9) % 50)}%`, animationDelay: `${index * 70}ms` }}
                 />
                 <span className="truncate text-[10px] text-slate-500">
                   {index + 1}
@@ -367,7 +371,7 @@ export default function Home() {
               </p>
               <Button
                 onClick={() => applyAction(nextItem, "in_progress")}
-                className="mt-5 w-full bg-amber-300 text-slate-950 hover:bg-amber-200"
+                className="energy-button mt-5 w-full bg-amber-300 text-slate-950 hover:bg-amber-200"
               >
                 Start this step
               </Button>
@@ -380,7 +384,7 @@ export default function Home() {
               </p>
               <Button
                 onClick={() => setActiveView("profile")}
-                className="mt-5 w-full bg-lime-300 text-slate-950"
+                className="energy-button mt-5 w-full bg-lime-300 text-slate-950"
               >
                 Set up profile
               </Button>
@@ -524,7 +528,7 @@ export default function Home() {
         <Button
           disabled={generatePath.isPending || formats.length === 0}
           onClick={createRoadmap}
-          className="mt-7 w-full bg-lime-300 text-slate-950 hover:bg-lime-200"
+          className="energy-button mt-7 w-full bg-lime-300 text-slate-950 hover:bg-lime-200"
         >
           {generatePath.isPending
             ? "Creating your pathway…"
@@ -609,7 +613,7 @@ export default function Home() {
           </p>
           <Button
             onClick={() => setActiveView("profile")}
-            className="mt-6 bg-lime-300 text-slate-950"
+            className="energy-button mt-6 bg-lime-300 text-slate-950"
           >
             Create roadmap
           </Button>
@@ -640,7 +644,7 @@ export default function Home() {
               <article
                 key={item.id}
                 className={cn(
-                  "glass-panel rounded-2xl p-5 three-d-card",
+                  "glass-panel roadmap-card rounded-2xl p-5 three-d-card",
                   item.status === "completed" && "border-lime-300/35"
                 )}
               >
@@ -693,7 +697,7 @@ export default function Home() {
                           <Button
                             size="sm"
                             onClick={() => applyAction(item, "completed")}
-                            className="bg-lime-300 text-slate-950 hover:bg-lime-200"
+                            className="energy-button bg-lime-300 text-slate-950 hover:bg-lime-200"
                           >
                             Complete
                           </Button>
@@ -805,7 +809,7 @@ export default function Home() {
       </section>
       <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="glass-panel rounded-2xl p-6 three-d-card">
-          <div className="mx-auto flex size-52 items-center justify-center rounded-full border-[18px] border-slate-700 [box-shadow:inset_0_0_38px_rgba(0,0,0,.28)]">
+          <div className="progress-orb mx-auto flex size-52 items-center justify-center rounded-full border-[18px] border-slate-700 [box-shadow:inset_0_0_38px_rgba(0,0,0,.28)]">
             <div className="text-center">
               <p className="text-4xl font-extrabold text-lime-300">
                 {completion}%

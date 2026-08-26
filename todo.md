@@ -20,5 +20,8 @@
 - [x] Add a dedicated catalog-grounded roadmap-explanation procedure with structured LLM output and deterministic fallback.
 - [x] Restore a distinct Skip action and provide clear rating choices that each trigger an explained path adaptation.
 - [ ] Exercise the complete live learner workflow and error/empty states after persistence and feedback updates.
+- [x] Add a signature 3D animated learning-path visual with depth, orbiting progress nodes, and accessible motion fallbacks.
+- [x] Upgrade dashboard cards, milestone states, and CTAs with intentional 3D hover/press interactions and layered lighting.
+- [x] Verify the new 3D motion system across desktop and mobile viewports, including reduced-motion behavior.
 - [x] Add feedback and chat-history save/load contracts plus full path restoration for milestones and progress history.
 - [x] Expand item ratings to the complete supported feedback set and verify each selection produces an adaptation explanation.
