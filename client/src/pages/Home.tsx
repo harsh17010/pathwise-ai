@@ -79,6 +79,14 @@ const formatOptions: Format[] = [
   "Self-paced",
 ];
 const levelOptions: Level[] = ["Beginner", "Intermediate", "Advanced"];
+const trajectoryLabels = [
+  "Profile",
+  "Align",
+  "Build",
+  "Practice",
+  "Evidence",
+  "Advance",
+];
 
 function Stat({
   label,
@@ -251,6 +259,11 @@ export default function Home() {
               80-course catalog to create a prerequisite-aware learning sequence
               you can inspect and adapt.
             </p>
+            <div className="path-facts mt-5 flex flex-wrap gap-2" aria-label="Pathwise learning-path guarantees">
+              <span><Check className="size-3" /> Gap-aware</span>
+              <span><Route className="size-3" /> Prerequisite-safe</span>
+              <span><Lightbulb className="size-3" /> Explainable</span>
+            </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button
                 onClick={() => setActiveView("profile")}
@@ -321,37 +334,24 @@ export default function Home() {
             </div>
             <BarChart3 className="size-5 text-lime-300" />
           </div>
-          <div className="mt-7 flex h-28 items-end gap-3 px-1">
-            {(
-              roadmap?.items ??
-              Array.from({ length: 6 }, (_, index) => ({
-                title: `Step ${index + 1}`,
-                status: "planned" as Status,
-                durationHours: 3 + index,
-              }))
-            ).map((item, index) => (
-              <div
-                className="group flex flex-1 flex-col items-center gap-2"
-                key={item.title}
-              >
-                <div
-                  className={cn(
-                    "three-d-bar w-full rounded-t-lg bg-gradient-to-t",
-                    item.status === "completed"
-                      ? "from-lime-500 to-lime-200"
-                      : index === 0
-                        ? "from-amber-500 to-amber-200"
-                        : "from-slate-700 to-slate-500"
-                  )}
-                  style={{ height: `${34 + ((index * 9) % 50)}%`, animationDelay: `${index * 70}ms` }}
-                />
-                <span className="truncate text-[10px] text-slate-500">
-                  {index + 1}
-                </span>
-              </div>
-            ))}
+          <div className="trajectory-rail mt-8 grid grid-cols-6 gap-1.5 sm:gap-3">
+            {trajectoryLabels.map((label, index) => {
+              const item = roadmap?.items[index];
+              const isComplete = item?.status === "completed";
+              const isCurrent = index === 0 && !isComplete;
+              return (
+                <div className="relative min-w-0" key={label}>
+                  {index < trajectoryLabels.length - 1 && <div className="trajectory-link absolute left-1/2 right-[-55%] top-4" />}
+                  <div className={cn("trajectory-stop mx-auto", isComplete && "trajectory-stop--complete", isCurrent && "trajectory-stop--current")} style={{ animationDelay: `${index * 100}ms` }}>
+                    {isComplete ? <Check className="size-3.5" /> : <span>{index + 1}</span>}
+                  </div>
+                  <p className="mt-3 truncate text-center text-[10px] font-semibold tracking-wide text-slate-400">{item?.milestone ?? label}</p>
+                  <p className="mt-1 hidden truncate text-center text-[9px] text-slate-600 sm:block">{item?.title ?? (index === 0 ? "Define objective" : "Awaiting path")}</p>
+                </div>
+              );
+            })}
           </div>
-          <div className="mt-4 rounded-xl border border-lime-200/10 bg-lime-200/5 p-3 text-xs leading-5 text-lime-100">
+          <div className="trajectory-insight mt-6 rounded-xl border border-lime-200/10 bg-lime-200/5 p-3 text-xs leading-5 text-lime-100">
             <Lightbulb className="mr-2 inline size-4 text-lime-300" />
             {adaptationNote}
           </div>
@@ -948,11 +948,13 @@ export default function Home() {
         )}
       >
         <div className="flex items-center gap-3 px-2">
-          <div className="grid size-10 place-items-center rounded-xl bg-lime-300 text-slate-950 shadow-[0_0_32px_rgba(163,230,53,.25)]">
-            <ListTree className="size-5" />
+          <div className="brand-emblem grid size-10 place-items-center rounded-xl bg-lime-300 text-slate-950 shadow-[0_0_32px_rgba(163,230,53,.25)]">
+            <span className="brand-route brand-route--one" />
+            <span className="brand-route brand-route--two" />
+            <span className="brand-route brand-route--three" />
           </div>
           <div>
-            <p className="font-extrabold tracking-tight text-white">Pathwise</p>
+            <p className="brand-wordmark font-extrabold tracking-tight text-white">Pathwise</p>
             <p className="text-[10px] uppercase tracking-[0.18em] text-lime-300">
               Learning intelligence
             </p>
@@ -1029,7 +1031,7 @@ export default function Home() {
             <Button
               onClick={() => setActiveView("profile")}
               size="sm"
-              className="bg-lime-300 text-slate-950 hover:bg-lime-200"
+              className="energy-button bg-lime-300 text-slate-950 hover:bg-lime-200"
             >
               New path
             </Button>
